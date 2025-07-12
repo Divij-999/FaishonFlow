@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import rightImage from '../assets/auth-right-img.png'; // <-- Add image
 import './Auth.css';
+import Navbar from '../components/Navbar';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -26,7 +27,10 @@ function Login() {
   };
 
   return (
+    <div>
+    <Navbar/>
     <div className="auth-wrapper">
+        
       <div className="auth-container">
         <div className="auth-left">
           <h2>Welcome Back</h2>
@@ -53,6 +57,7 @@ function Login() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

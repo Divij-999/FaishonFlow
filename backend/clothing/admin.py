@@ -5,8 +5,6 @@ class ItemAdmin(admin.ModelAdmin):
     list_display = ('title', 'uploader', 'category', 'condition', 'is_available', 'is_approved')
     list_filter = ('category', 'condition', 'is_approved')
 
-class ItemImageAdmin(admin.ModelAdmin):
-    list_display = ('item', 'image')
 
 class SwapRequestAdmin(admin.ModelAdmin):
     list_display = ('requester', 'requested_item', 'offered_item', 'status', 'created_at', 'email_sent')

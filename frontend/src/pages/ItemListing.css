@@ -1,0 +1,134 @@
+.item-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #fdf6e3, #cbeacb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  }
+  
+  .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 950px;
+    height: 600px;
+  }
+  
+  /* Left side (image + thumbnails) */
+  .item-left {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .item-main-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    padding: 10px;
+  }
+  
+  /* Thumbnails */
+  .item-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .item-thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .item-thumb:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Right side (info) */
+  .item-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    overflow-y: auto;
+    border-left: 1px solid #cceccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .item-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #8b5e3c;
+  }
+  
+  .item-desc {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .item-btn {
+    margin-top: 4.8em;
+    background-color: #228b22;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-btn:hover {
+    background-color: #1b731b;
+  }
+ .back-button {
+
+  bottom: 20px;
+  left: 20px;
+margin-top: 60px;
+  background-color: #1b731b;
+  color: #fff;
+  padding: 10px 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #145d14;
+  transform: translateY(-2px);
+}

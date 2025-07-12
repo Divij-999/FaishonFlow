@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import rightImage from '../assets/auth-right-img.png'; // <-- Add your image here
 import './Auth.css';
+import Navbar from '../components/Navbar';
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -37,7 +38,10 @@ function Register() {
   };
 
   return (
+    <div>
+    <Navbar/>
     <div className="auth-wrapper">
+        
       <div className="auth-container">
         <div className="auth-left">
           <h2>Create Your Account</h2>
@@ -83,6 +87,7 @@ function Register() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

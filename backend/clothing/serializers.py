@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CustomUser, Item, ItemImage, SwapRequest, NotificationLog, Redemption, AdminAction
+from .models import CustomUser, Item, SwapRequest, NotificationLog, Redemption, AdminAction
 
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:

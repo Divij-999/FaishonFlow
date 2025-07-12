@@ -30,7 +30,7 @@
     min-width: 300px;
     padding: 50px;
     padding-bottom: 10px; /* ✅ Add space at the bottom */
-    padding-top:10px;
+    padding-top: 10px;
     overflow-y: auto;
     max-height: 100%;
     scrollbar-width: thin;
@@ -60,6 +60,7 @@
     overflow-y: auto; /* 🔥 Allow scroll if content overflows */
   }
   
+  /* ✅ ✅ Keep ONLY THIS version */
   .auth-right-img {
     display: block;
     max-width: 100%;
@@ -74,7 +75,6 @@
     outline: none !important;
     background: transparent !important;
   }
-  
   
   .auth-logo {
     width: 30px;
@@ -139,14 +139,6 @@
     color: #228b22;
     font-weight: bold;
     text-decoration: none;
-  }
-  
-  .auth-right-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
   /* Animations */
