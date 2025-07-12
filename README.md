@@ -1,4 +1,4 @@
-# Recloset – Community Clothing Exchange Platform
+# ReWear – Community Clothing Exchange Platform
 
 **Problem Statement Chosen**: Problem Statement 3 – *ReWear: Community Clothing Exchange*
 
