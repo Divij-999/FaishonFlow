@@ -22,7 +22,9 @@ const Home = () => {
           <div className="hero-content">
             
             <div className="hero-buttons">
-              <button className="primary-btn" style={{ marginTop: '510px' }}>Start swapping</button>
+              <button className="primary-btn"  style={{ marginTop: '510px' }}><a href='/swapping' style={{color:'white', textDecoration:"None"}}>Start swapping</a> </button>
+              {/* <Link to="/swapping" className="swap-button">Start Swapping</Link> */}
+
             </div>
           </div>
         </section>
