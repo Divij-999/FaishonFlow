@@ -1,8 +1,8 @@
-# ReWear – Community Clothing Exchange Platform
+# FaishonFlow – Community Clothing Exchange Platform
 
 **Problem Statement Chosen**: Problem Statement 3 – *ReWear: Community Clothing Exchange*
 
-ReWear is a full-stack web application built with **Django** (backend) and **React** (frontend). It allows users to exchange unused clothing via direct swaps or a point-based redemption system. The platform promotes **sustainable fashion** and reduces **textile waste** by encouraging the community to reuse wearable garments in an interactive and eco-friendly environment.
+FaishonFlow is a full-stack web application built with **Django** (backend) and **React** (frontend). It allows users to exchange unused clothing via direct swaps or a point-based redemption system. The platform promotes **sustainable fashion** and reduces **textile waste** by encouraging the community to reuse wearable garments in an interactive and eco-friendly environment.
 
 ---
 
