@@ -1,0 +1,127 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #fff8e7; /* Beige */
+  border-bottom: 1px solid #e0d6c3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 2px solid #2e7d32; /* Dark green */
+  background-color: white;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2e7d32; /* Dark green */
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #4e342e; /* Brown */
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.navbar-links a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: #2e7d32;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #2e7d32;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.swap-button {
+  padding: 8px 18px;
+  border-radius: 9999px;
+  /* background-color: #529455; */
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(17, 49, 18, 0.3);
+}
+
+.swap-button:hover {
+  background-color: #a7dfa7;
+  transform: translateY(-2px);
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #2e7d32;
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+/* Modern Font Pair: Playfair Display + Plus Jakarta Sans */
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin: 0;
+  }
+  
+  .navbar {
+    border-bottom: 1px solid #d6c5ae; /* subtle contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* soft drop */
+  }
