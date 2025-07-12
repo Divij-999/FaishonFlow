@@ -6,6 +6,23 @@ import './Home.css';
 import logo from '../assets/logo.png';
 import Footer from '../components/Footer';
 import bg from '../assets/bg.png'
+// import dressesImg from '../assets/categories/dresses.png';
+import image4 from '../images/Women/wi4.jpg'
+
+import shirtsImg from '../images/Men/mi10.jpg';
+import jacketsImg from '../images/Men/mi14.jpg';
+import jeansImg from '../images/Men/mi18.jpg';
+import shoesImg from '../images/Men/mi1.jpg';
+
+// List of categories with image and name
+const categories = [
+  { name: 'Dresses', image: image4 },
+  { name: 'Shirts', image: shirtsImg },
+  { name: 'Jackets', image: jacketsImg },
+  { name: 'Jeans', image: jeansImg },
+  { name: 'Shoes', image: shoesImg },
+];
+
 
 const Home = () => {
   return (
@@ -36,10 +53,10 @@ const Home = () => {
         <section className="section">
           <h2>Categories</h2>
           <div className="horizontal-scroll">
-            {['Dresses', 'Shirts', 'Jackets', 'Jeans', 'Shoes'].map((category, index) => (
+            {categories.map((category, index) => (
               <div className="category-card" key={index}>
-                <img src={logo} alt={category} />
-                <p>{category}</p>
+                <img src={category.image} alt={category.name} />
+                <p>{category.name}</p>
               </div>
             ))}
           </div>

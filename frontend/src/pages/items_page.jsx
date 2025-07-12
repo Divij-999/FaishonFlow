@@ -4,6 +4,11 @@ import './items_page.css';
 import logo from '../assets/logo.png';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import image4 from '../images/Men/mi9.jpg';
+import image5 from '../images/Men/mi20.jpg';
+import image6 from '../images/Women/wi25.jpg';
+
+
 
 const items = [
   {
@@ -11,21 +16,21 @@ const items = [
     name: 'Casual Cotton Shirt',
     size: 'L',
     description: 'A lightweight cotton shirt, perfect for summer days.',
-    image: logo,
+    image: image4,
   },
   {
     id: 2,
     name: 'Trendy Denim Jacket',
     size: 'M',
     description: 'Stylish denim jacket in great condition.',
-    image: logo,
+    image: image5,
   },
   {
     id: 3,
     name: 'Elegant Evening Dress',
     size: 'S',
     description: 'Elegant dress for formal occasions, gently used.',
-    image: logo,
+    image: image6,
   },
 ];
 
