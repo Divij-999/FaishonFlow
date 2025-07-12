@@ -83,7 +83,7 @@ function Register() {
           <img src={rightImage} alt="Fashion Theme" className="auth-right-img" />
           <h1>Clothes With a Cause 🌱</h1>
           <p>
-            ReWear isn’t just a platform — it’s a movement.
+            FashionFlow isn’t just a platform — it’s a movement.
             Trade clothes, make friends, and reduce fashion waste together.
             Your unused fashion could be someone’s new favorite.
           </p>

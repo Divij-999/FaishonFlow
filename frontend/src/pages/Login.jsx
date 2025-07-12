@@ -58,7 +58,7 @@ function Login() {
 
         <div className="auth-right">
           <img src={rightImage} alt="Fashion Theme" className="auth-right-img" />
-          <h1>Welcome to ReWear 🌿</h1>
+          <h1>Welcome to FashionFlow 🌿</h1>
           <p>
             A home for sustainable fashion lovers. Log in and start exchanging clothing
             that makes a difference.
