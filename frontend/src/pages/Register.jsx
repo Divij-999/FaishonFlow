@@ -25,16 +25,18 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = new FormData();
-    Object.entries(formData).forEach(([key, value]) => {
-      data.append(key, value);
-    });
-    try {
-      await axios.post('http://localhost:8000/api/register/', data);
-      alert('Registered successfully!');
-    } catch (err) {
-      alert('Error: ' + JSON.stringify(err.response?.data || err.message));
-    }
+    // const data = new FormData();
+    // Object.entries(formData).forEach(([key, value]) => {
+    //   data.append(key, value);
+    // });
+    // try {
+    //   await axios.post('http://localhost:8000/api/register/', data);
+    //   alert('Registered successfully!');
+    // } catch (err) {
+    //   alert('Error: ' + JSON.stringify(err.response?.data || err.message));
+    // }
+    
+      window.location.href = '/';
   };
 
   return (

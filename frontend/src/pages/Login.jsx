@@ -19,10 +19,16 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/login/', formData);
-      alert('Login successful!');
-    } catch (err) {
-      alert('Login failed. Check credentials.');
+      window.location.href = '/';
+      // const response = await axios.post('/api/login', formData);
+      // if (response.data.success) {
+      //   // Redirect to home page on successful login
+      // } else {
+      //   alert('Login failed. Please check your credentials.');
+      // }
+    } catch (error) {
+      console.error('Login error:', error);
+      alert('An error occurred while logging in. Please try again.');
     }
   };
 
@@ -41,7 +47,9 @@ function Login() {
             <label>Password *</label>
             <input type="password" name="password" required onChange={handleChange} />
 
-            <button type="submit">Login</button>
+            <button type="submit">
+              <Link to="/"></Link>
+              Login</button>
             <p className="link-text">
               New here? <Link to="/register">Create an account →</Link>
             </p>
