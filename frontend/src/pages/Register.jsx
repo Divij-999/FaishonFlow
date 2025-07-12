@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import rightImage from '../assets/auth-right-img.png'; // <-- Add your image here
 import './Auth.css';
+import GoogleLoginButton from "../components/GoogleLoginButton";
+
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -67,6 +69,15 @@ function Register() {
             <input type="file" name="profile_picture" accept="image/*" onChange={handleChange} />
 
             <button type="submit">Register</button>
+            
+            <div className="or-separator">
+              <span>or</span>
+            </div>
+
+            <div className="google-container">
+              <GoogleLoginButton />
+            </div>
+
             <p className="link-text">
               Already a member? <Link to="/login">Login here →</Link>
             </p>
